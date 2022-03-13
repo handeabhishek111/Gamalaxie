@@ -1,4 +1,4 @@
-# arcade-card-game
+# Tetris
 
 ## How to run the project: 
 
