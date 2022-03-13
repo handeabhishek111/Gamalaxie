@@ -8,7 +8,7 @@ async function login() {
   let user = Moralis.User.current();
   if (!user) {
     try {
-      user = await Moralis.authenticate({ signingMessage: "Welcome to 2048 Card Game" });
+      user = await Moralis.authenticate({ signingMessage: "Welcome to Tetris-nft-Game" });
       console.log(user.get("ethAddress"));
       $("#userId").val(user.get("ethAddress"));
       $("#btn-login").hide();
