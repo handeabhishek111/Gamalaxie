@@ -58,8 +58,12 @@ app.get("/some_route", (req, res) => {
 //   res.return(value);
 // });
 
+app.get("/2048", (req, res) => {
+  res.render("2048", { moralisAppKey, moralisServerUrl });
+});
+
 app.get("/", (req, res) => {
-  res.render("tetrishome", { moralisAppKey, moralisServerUrl });
+  res.render("home", { moralisAppKey, moralisServerUrl });
 });
 app.get("/tetris", (req, res) => {
   res.render("tetrisHome", { moralisAppKey, moralisServerUrl });

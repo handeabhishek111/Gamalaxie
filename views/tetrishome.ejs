@@ -27,7 +27,11 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
+  <style>
+      .game-container {
+        height: 800px !important;
+      }
+  </style>
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport"
@@ -47,23 +51,15 @@
       <input autocomplete="off" className="form-control" id="userId" readonly name="userId"></input>
       <label for="userId">Connected Wallet</label>
     </div>
-    <div class="heading">
-
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
-      <div style="float: right; border-radius: 50%; margin-right:60px; "><button class="btn btn-success"
+    <div class="heading ">
+      <div style="float: right; border-radius: 50%; margin-right:60px;"><button class="btn mt-2 btn-success"
           id="btn-login">Moralis Metamask Login</button>
-        <button class="btn btn-warning" style="display:none;" id="btn-logout">Logout</button>
+        <button class="btn mt-2 btn-warning" style="display:none;" id="btn-logout">Logout</button>
       </div>
+      <div style="float: right; border-radius: 50%; margin-right:60px; "><a href="/"><button class="btn mt-2 btn-success"
+        id="btn-login">Home</button></a>
     </div>
 
-    <div class="above-game">
-      <p class="game-intro">Join the tiles <strong>to get high score!</strong></p>
-      <br>
-      <a class="restart-button">New Game</a>
-    </div>
     <div>
       <p class="game-explanation">
         <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles
@@ -84,7 +80,7 @@
       <div class="grid-container">
         <div id="tetris">
           <canvas id="scene"></canvas>
-          <div id="gameOver">
+          <div style="float:right;" id="gameOver">
             <h1>Game Over !</h1>
             <h3>Score: <span id="finalScore">0</span></h3>
             <h2><a href="#" id="restart">Restart</a></h2>
@@ -95,6 +91,7 @@
               <h1 id="levelInfo">Level: <br><span id="level">1</span></h1>
               <h2 id="scoreInfo">Score: <br><span id="score">0</span></h2>
               <div id="rewardInfo" class="invisible">+<span id="reward">0</span></div>
+              <label for="preview"> Next Block </label>
               <canvas id="preview"></canvas>
             </div>
           </div>
