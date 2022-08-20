@@ -24,7 +24,7 @@ constructor()
 }
 
     //function to join the queue by passing address, token id and score
-    function JoinQueue(address _player,uint256 _tokenId,uint256 _score) public 
+    function joinQueue(address _player,uint256 _tokenId,uint256 _score) public 
     {
         //Checks if the address being passed belongs to the player or the owner if not return message
         require( msg.sender == _player || msg.sender == owner,"You are not the owner of this address");
