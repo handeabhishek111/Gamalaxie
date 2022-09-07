@@ -1,4 +1,4 @@
-# Tetris / 2048 Card Game
+# Gamalaxie, Formerly known as Web3-Arcade
 
 ## How to run the project: 
 
