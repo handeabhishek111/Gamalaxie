@@ -1,7 +1,7 @@
 //SPDX-License-Identifier:MIT
 pragma solidity>=0.8.0;
 
-contract Web3Arcade 
+contract Gamalaxie 
 {
     address owner;
     //Player Info
